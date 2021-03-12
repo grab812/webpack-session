@@ -9,10 +9,12 @@
     "url": "git+https://github.com/syakuis/webpack-react.git"
   },
   "scripts": {
+    "start": "npm run dev && npm run server",
     "dev": "webpack --colors --progress -d",
     "prod": "webpack --colors --progress -p",
     "serv": "webpack-dev-server",
-    "serv2": "webpack-dev-server -p"
+    "serv2": "webpack-dev-server -p",
+    "server": "npx serve -p 3000"
   },
   "devDependencies": {
     "css-loader": "^0.26.1",
